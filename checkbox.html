@@ -61,9 +61,8 @@ actualCheckbox.checked = false;
 // change both states at once
 function toggleCheckboxes(){
   const customChecked = customCheckbox.classList.contains('is-checked')
-  const actualChecked = actualCheckbox.getAttribute('checked') === "true"
 
-  if (customChecked && actualCheckbox){
+  if (customChecked && actualCheckbox.checked){
     customCheckbox.classList.remove('is-checked')
     actualCheckbox.checked = false;
   } else {
